@@ -4,7 +4,7 @@ A Python-based utility for downloading APKs from Uptodown
 , extracting their AndroidManifest.xml files, and generating a structured Excel report.
 The script also packages the APKs, manifests, and logs into zip archives for easier sharing or analysis.
 
-##✨ Features
+## ✨ Features
 
 Download APKs directly via app URL or by fetching all apps from a developer.
 
@@ -18,7 +18,7 @@ Bundles downloads and logs into zip archives.
 
 Built-in retry logic for network requests.
 
-##⚙️ Requirements
+## ⚙️ Requirements
 
 Python 3.8+
 
@@ -34,7 +34,7 @@ tqdm
 
 openpyxl
 
-##📦 Installation
+## 📦 Installation
 
 Clone the repository:
 
@@ -46,7 +46,7 @@ Ensure Python and Java are installed and available in your system PATH.
 
 The script will download apktool.jar automatically if not found.
 
-##🚀 Usage
+## 🚀 Usage
 
 Run the script with either a developer name/slug or a direct app URL.
 
@@ -56,7 +56,7 @@ python downloader.py --developer google --outdir ./downloads
 Download a single app
 python downloader.py --url "https://en.uptodown.com/android/download-app-name" --outdir ./downloads
 
-##📂 Output
+## 📂 Output
 
 After running, you will get:
 
@@ -74,14 +74,14 @@ After running, you will get:
 
 <developer>_manifests.zip
 
-##📝 Examples
+## 📝 Examples
 ###Example 1: Download Google apps
 python downloader.py --developer google --outdir ./google_apps
 
 ###Example 2: Download a single app
 python downloader.py --url "https://en.uptodown.com/android/download-whatsapp" --outdir ./whatsapp_app
 
-##⚠️ Notes
+## ⚠️ Notes
 
 Some apps may only have XAPK available — in this case, the script attempts to fetch the latest APK version instead.
 
@@ -89,6 +89,6 @@ Requires an active internet connection for fetching APKs and apktool.
 
 This tool is for research, analysis, and automation purposes. Please respect Uptodown’s terms of service when using it.
 
-##📄 License
+## 📄 License
 
 This repository is private. All rights reserved.
